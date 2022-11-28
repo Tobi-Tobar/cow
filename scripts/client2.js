@@ -115,7 +115,7 @@ let mesh;
 
 const loader = new GLTFLoader();
 loader.load(
-  "../assets/cow1.glb",
+  "./assets/cow1.glb",
   function ( gltf ) {
     mesh = gltf.scene;
     mesh.scale.set(3,3,3);
@@ -129,7 +129,7 @@ let mesh1;
 
 const loader1 = new GLTFLoader();
 loader.load(
-  "../assets/ground.glb",
+  "./assets/ground.glb",
   function ( gltf ) {
     mesh1 = gltf.scene;
     mesh1.scale.set(5,5,5);
