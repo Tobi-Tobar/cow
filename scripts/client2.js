@@ -115,7 +115,7 @@ let mesh;
 
 const loader = new GLTFLoader();
 loader.load(
-  "../../assets/cow1.glb",
+  "../assets/cow1.glb",
   function ( gltf ) {
     mesh = gltf.scene;
     mesh.scale.set(3,3,3);
@@ -129,7 +129,7 @@ let mesh1;
 
 const loader1 = new GLTFLoader();
 loader.load(
-  "../../assets/ground.glb",
+  "../assets/ground.glb",
   function ( gltf ) {
     mesh1 = gltf.scene;
     mesh1.scale.set(5,5,5);
@@ -219,7 +219,7 @@ loader.load(
 
   // First Image (red and purple glitch map)
   // Load image as texture
-  const texture = new THREE.TextureLoader().load( '../assets/grass1.png' );
+  const texture = new THREE.TextureLoader().load( './assets/grass1.png' );
   // Immediately use the texture for material creation
   const material = new THREE.MeshBasicMaterial( { map: texture, side: THREE.DoubleSide } );
   // Create plane geometry
@@ -233,7 +233,7 @@ loader.load(
 
   // Second Image (Text with image and white background)
   // Load image as texture
-  const texture2 = new THREE.TextureLoader().load( '../assets/grass2.png' );
+  const texture2 = new THREE.TextureLoader().load( './assets/grass2.png' );
   // immediately use the texture for material creation
   const material2 = new THREE.MeshBasicMaterial( { map: texture2, side: THREE.DoubleSide } );
   // Create plane geometry
