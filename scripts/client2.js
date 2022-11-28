@@ -221,7 +221,7 @@ loader.load(
   // Load image as texture
   const texture = new THREE.TextureLoader().load( './assets/grass1.png' );
   // Immediately use the texture for material creation
-  const material = new THREE.MeshBasicMaterial( { map: texture, side: THREE.DoubleSide } );
+  const material = new THREE.MeshBasicMaterial( { map: texture, side: THREE.DoubleSide, transparent: true } );
   // Create plane geometry
   const geometry = new THREE.PlaneGeometry( 10, 10 );
   // Apply image texture to plane geometry
@@ -235,7 +235,7 @@ loader.load(
   // Load image as texture
   const texture2 = new THREE.TextureLoader().load( './assets/grass2.png' );
   // immediately use the texture for material creation
-  const material2 = new THREE.MeshBasicMaterial( { map: texture2, side: THREE.DoubleSide } );
+  const material2 = new THREE.MeshBasicMaterial( { map: texture2, side: THREE.DoubleSide, transparent: true } );
   // Create plane geometry
   const geometry2 = new THREE.PlaneGeometry( 10, 10 );
   // Apply image texture to plane geometry
